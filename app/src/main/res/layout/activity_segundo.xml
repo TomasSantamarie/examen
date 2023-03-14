@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Segundo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/autor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Autor del libro"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Año de publicacion"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/seguir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente" />
+
+        <Button
+            android:id="@+id/atras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atras" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
