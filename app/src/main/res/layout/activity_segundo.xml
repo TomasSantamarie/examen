@@ -28,7 +28,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/seguir"
+            android:id="@+id/seguir2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Siguiente" />

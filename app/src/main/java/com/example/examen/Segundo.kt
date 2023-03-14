@@ -19,7 +19,7 @@ class Segundo : AppCompatActivity() {
         var titulo = bundle?.getString("titulo")
         var paginas = bundle?.getInt("paginas")
 
-        binding.seguir.isEnabled = false
+        binding.seguir2.isEnabled = false
         binding.ano.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
@@ -28,11 +28,11 @@ class Segundo : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                binding.seguir.isEnabled = binding.ano.text.toString().toInt() >= 0
+                binding.seguir2.isEnabled = binding.ano.text.toString().toInt() >= 0
             }
         })
 
-        binding.seguir.setOnClickListener{
+        binding.seguir2.setOnClickListener{
 
             var autor = binding.autor.text.toString()
             var ano = binding.ano.text.toString().toInt()
